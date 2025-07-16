@@ -27,4 +27,4 @@ jobs:
           context: ./node-ci-cd-app
           file: ./node-ci-cd-app/Dockerfile
           push: true
-          tags: obioma/node-ci-cd-app:latest
+          tags: justobioma/node-ci-cd-app:latest
