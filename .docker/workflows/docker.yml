@@ -26,3 +26,8 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: obioma/node-ci-cd-app:latest
+    - name: Debug secrets presence
+    run: echo "Secrets length: ${#DOCKER_USERNAME} / ${#DOCKER_PASSWORD}"
+    env:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
