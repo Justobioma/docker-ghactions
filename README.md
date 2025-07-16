@@ -1,4 +1,4 @@
-# 🚀 Node.js CI/CD with Docker
+## 🚀 Node.js CI/CD with Docker
 
 [![Build and Push](https://github.com/justobioma/node-ci-cd-app/actions/workflows/docker.yml/badge.svg)](https://github.com/justobioma/node-ci-cd-app/actions/workflows/docker.yml)
 
@@ -35,22 +35,19 @@ node-ci-cd-app/ ├── app.js ├── package.json ├── Dockerfile ├
 
 Install dependencies:
 
-```bash
 npm install
-
 Run the server locally:
 node app.js
 Visit http://localhost:3000
 
 ---
-
-🐳 Build and Run with Docker
+## 🐳 Build and Run with Docker
 To build and run locally:
 docker build -t node-ci-cd-app .
 docker run -p 3000:3000 node-ci-cd-app
 
 ---
-🔐 GitHub Secrets Required
+## 🔐 GitHub Secrets Required
 | Name | Description | 
 | DOCKER_USERNAME | Your DockerHub username | 
 | DOCKER_PASSWORD | Your DockerHub password/token | 
@@ -58,14 +55,21 @@ docker run -p 3000:3000 node-ci-cd-app
 Add these under Repo → Settings → Secrets → Actions
 
 ---
-🧪 Test the Pipeline
+## 🧪 Test the Pipeline
 Make any change and push:
 git commit -am "Trigger build"
 git push origin master
 
 Check the Action tab for status
 
+---
+## Selected Screenshoots
 
+
+![Screenshot_16-7-2025_144913_hub docker com](https://github.com/user-attachments/assets/a232f9f5-9fde-41ea-8920-9ffbfbb1b936)
+
+
+![Screenshot_16-7-2025_144935_github com](https://github.com/user-attachments/assets/393286b4-d04f-465b-b865-5332c84687db)
 
 
 
