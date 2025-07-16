@@ -7,6 +7,10 @@ on:
     branches: [ master ]
   workflow_dispatch:
 
+with:
+  context: ./node-ci-cd-app
+  file: ./node-ci-cd-app/Dockerfile
+  
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
