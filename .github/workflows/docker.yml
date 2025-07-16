@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   workflow_dispatch:
-  
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
@@ -24,7 +24,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./node-ci-cd-app
+          file: ./node-ci-cd-app/Dockerfile
           push: true
           tags: obioma/node-ci-cd-app:latest
